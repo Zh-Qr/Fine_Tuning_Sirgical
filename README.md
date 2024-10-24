@@ -15,7 +15,11 @@
 
 ---
 # 使用方式
-> 训练例子
-`<python train.py --train_data autodl-tmp/cifar-10-batches-py/test_train_batch.pkl --test_data autodl-tmp/cifar-10-batches-py/test_test_batch.pkl --weights checkpoints/resnet26.pth --save_path checkpoints/ --weights_name full_fine_tune --epochs 15 --lr 1e-3>`
-> 测试例子
-`<python test.py --data autodl-tmp/cifar-10-batches-py/test_test_batch.pkl --weights checkpoints/inputlevel_b1_lr_0.100000.pth >`
+训练例子  
+```
+python train.py --train_data autodl-tmp/cifar-10-batches-py/test_train_batch.pkl --test_data autodl-tmp/cifar-10-batches-py/test_test_batch.pkl --weights checkpoints/resnet26.pth --save_path checkpoints/ --weights_name full_fine_tune --epochs 15 --lr 1e-3
+```
+测试例子  
+```
+python test.py --data autodl-tmp/cifar-10-batches-py/test_test_batch.pkl --weights checkpoints/inputlevel_b1_lr_0.100000.pth
+```
